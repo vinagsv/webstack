@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Assignment</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-available="yes">
+          <td>Apple</td>
+          <td class="price-cell">Rs. 200</td>
+          <td>10</td>
+        </tr>
+        <tr class="highlight-row" data-available="yes">
+          <td>Banana</td>
+          <td class="price-cell">Rs. 80</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td class="price-cell">Rs. 140</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td class="price-cell">Rs. 420</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.first {
+  border: 1px solid red;
+  padding-left: 1em;
+}
+
+.first div p {
+  color: blue;
+  font-weight: bolder;
+}
+
+.third > p + ul {
+  background-color: blue;
+}

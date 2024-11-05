@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 14px;
+  box-sizing: border-box;
+  caret-color: transparent;
+  font-family: "Poppins", sans-serif;
+  background: #fbf4fd;
+}
+
+.page-container {
+  background: #fbf4fd;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calculator-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.calculator-section-container > h1 {
+  font-size: 80px;
+  margin: 20px 0;
+}
+
+.bg-circle {
+  background: #f5eaf9;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 33px;
+  border: 10px solid #e2e2e2;
+  padding: 20px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.display {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 180px;
+  background: #f3f2f2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.primary-input {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #000;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.secondary-input {
+  font-size: 1em;
+  color: #666;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.row-first {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  height: 80px;
+  width: 100%;
+  font-size: 2em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #fceebd;
+  color: #bd882a;
+}
+
+.btn-equal {
+  background-color: #ffc138;
+  grid-row: span 2;
+  height: 100%;
+}
+
+.btn-expanded {
+  grid-column: span 2;
+}
+
+.copyright-text {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .calculator-section-container > h1 {
+    font-size: 40px;
+  }
+
+  .bg-circle {
+    padding: 10px;
+  }
+
+  .display {
+    height: 120px;
+    padding: 8px;
+  }
+
+  .primary-input {
+    font-size: 1.8em;
+  }
+
+  .secondary-input {
+    font-size: 0.8em;
+  }
+
+  .btn {
+    height: 60px;
+    font-size: 1.4em;
+  }
+
+  .btn-primary,
+  .btn-equal {
+    width: 100%;
+  }
+}

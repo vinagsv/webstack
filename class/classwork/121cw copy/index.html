@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Pattern</title>
+  </head>
+  <body>
+    <h2>Enter the number of rows</h2>
+    <input
+      type="number"
+      id="rowno"
+      placeholder="Enter the number "
+    /><br /><br />
+    <button onclick="stars()">print stars</button>
+
+    <pre id="output"></pre>
+
+    <script>
+      function stars() {
+        const rowno = document.getElementById("rowno").value;
+        let output = "";
+
+        for (let i = 1; i <= rowno; i++) {
+          output += "* ".repeat(i).trim() + "\n";
+        }
+
+        document.getElementById("output").textContent = output;
+      }
+    </script>
+  </body>
+</html>

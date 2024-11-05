@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 2px solid red;
+  margin-top: 1rem;
+}
+
+.container1 {
+  width: 30rem;
+  background-color: antiquewhite;
+  float: left;
+  overflow: scroll;
+  height: 148px;
+}
+
+.container2 {
+  width: 30rem;
+  background-color: beige;
+  float: right;
+}
+
+.container3 {
+  width: 15rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
