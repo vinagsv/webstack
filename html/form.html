@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style></style>
+  </head>
+  <body>
+    <form>
+      <fieldset rows="10" cols="10">
+        \
+        <legend></legend>
+        <label for="name">Name *:</label>
+        <input type="text" id="name" autofocus required />
+        <br />
+        <br />
+        <label for="email"
+          >Email:
+          <input type="email" id="email" placeholder="exmpl@email.com" />
+        </label>
+        <br />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" id="password" required />
+        <br />
+        <br />
+        <!-- radio buttons -->
+
+        <label for="male"
+          >Male: <input type="radio" name="gender" id="male"
+        /></label>
+        <label for="female"
+          >Female:<input type="radio" name="gender" id="female"
+        /></label>
+        <br />
+        <!-- checkboxes -->
+        <label for="games">Games:</label>
+        <label for="cricket"
+          >Cricket: <input type="checkbox" id="cricket"
+        /></label>
+        <label for="badminton"
+          >Badminton: <input type="checkbox" id="badminton"
+        /></label>
+        <label for="football"
+          >Football: <input type="checkbox" id="football"
+        /></label>
+        <br />
+
+        <!-- dropdowns -->
+        <label for="cars">Cars:</label>
+        <select id="cars">
+          <option value="alto">Alto</option>
+          <option value="Nexon">Nexon</option>
+          <option value="thar">Thar</option>
+        </select>
+        <br />
+        <br />
+
+        <!-- search selection -->
+        <label for="food">choose your fav food</label>
+        <input list="foods" name="food" id="food" />
+        <datalist id="foods">
+          <option value="icecream">icecream</option>
+          <option value="Pasta">pasta</option>
+          <option value="Pizza">pizza</option>
+        </datalist>
+        <!-- phone number -->
+        <!-- file -->
+        <!-- text area -->
+        <!-- button -->
+      </fieldset>
+    </form>
+  </body>
+</html>

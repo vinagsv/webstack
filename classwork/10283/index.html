@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Paragraph Visibility</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      p {
+        margin-top: 20px;
+        display: none; /* Initially hide the paragraph */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Toggle Paragraph Visibility</h1>
+    <button id="toggleButton">Show Paragraph</button>
+    <p id="toggleParagraph">Click the button to hide or show the paragraph.</p>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const toggleParagraph = document.getElementById("toggleParagraph");
+
+      toggleButton.addEventListener("click", function () {
+        if (
+          toggleParagraph.style.display === "none" ||
+          toggleParagraph.style.display === ""
+        ) {
+          toggleParagraph.style.display = "block"; // Show the paragraph
+          toggleButton.textContent = "Hide Paragraph"; // Update button text
+        } else {
+          toggleParagraph.style.display = "none"; // Hide the paragraph
+          toggleButton.textContent = "Show Paragraph"; // Update button text
+        }
+      });
+    </script>
+  </body>
+</html>

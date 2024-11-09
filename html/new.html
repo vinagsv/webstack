@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper Submission Form</title>
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="date"],
+      .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-row .form-group {
+        width: 48%;
+      }
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #444;
+      }
+
+      #description {
+        height: 30px;
+      }
+
+      #submit {
+        width: 100px;
+        padding: 6px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .file-upload {
+        margin-bottom: 10px;
+      }
+
+      /* Custom File Upload */
+      .file-upload-wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px;
+        background-color: white;
+        position: relative;
+      }
+      .file-upload-wrapper input[type="text"] {
+        border: none;
+        padding: 5px;
+        width: calc(100% - 40px); /* Leave space for the Browse button */
+        color: #555;
+        pointer-events: none;
+        text-align: left;
+      }
+      .file-upload-wrapper input::placeholder {
+        color: #555;
+        font-style: italic;
+      }
+      .file-upload-wrapper label {
+        width: 35px;
+        height: 35px;
+        background-color: #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0px; /* Adjusted position */
+        top: 0; /* Aligns the logo to the top of the wrapper */
+      }
+      .file-upload-wrapper label img {
+        width: 20px;
+        height: 20px;
+        pointer-events: none; /* Ensures that clicking the image triggers the file input */
+      }
+      .file-upload-wrapper input[type="file"] {
+        display: none;
+      }
+      .file-upload-wrapper input[type="text"]::placeholder {
+        text-align: left;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 style="text-align: left">Paper Submission Form</h2>
+      <hr />
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input
+              type="text"
+              id="date"
+              name="date"
+              placeholder="MM/DD/YYYY"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Student Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john.doe@example.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="studentID">Student ID</label>
+          <input type="text" id="studentID" name="studentID" required />
+        </div>
+
+        <div class="form-group">
+          <label for="paperTitle">Paper Title</label>
+          <input type="text" id="paperTitle" name="paperTitle" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Custom File Upload Field -->
+        <div class="form-group file-upload">
+          <label for="file">Upload Files</label>
+          <div class="file-upload-wrapper">
+            <input type="text" id="file-name" placeholder="Browse" readonly />
+            <label for="file">
+              <!-- Browse icon as a folder or upload logo -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/File_Upload_Icon.svg/1200px-File_Upload_Icon.svg.png"
+                alt="Browse"
+              />
+            </label>
+            <input type="file" id="file" name="file" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

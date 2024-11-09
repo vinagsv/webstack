@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .contianer span,
+    em {
+      border: 2px solid;
+      padding: 0.5em;
+    }
+
+    .contianer span:nth-child(odd) {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <div class="contianer">
+      <span>Span 1</span>
+      <span>Span 2</span>
+      <em>This is an `em`</em>
+      <span>Span 3</span>
+      <span>Span 4</span>
+      <span>Span 5</span>
+      <span>Span 6</span>
+      <span>Span 7</span>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container p::before {
+        content: "this is supposed to be heading";
+        color: aqua;
+        font-weight: bolder;
+        display: block;
+        background-color: darkblue;
+      }
+
+      .container p::after {
+        content: "this is supposed to be footer";
+        color: aqua;
+        font-weight: bolder;
+        display: block;
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>here is a generic something</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.scale {
+  width: 500px;
+  height: 50px;
+  background-color: rgb(78, 78, 78);
+}
+
+.content-box {
+  width: 500px;
+  background: chartreuse;
+  padding: 5px;
+  border: 5px solid red;
+}
+
+.border-box {
+  width: 500px;
+  background-color: rgb(247, 0, 255);
+  box-sizing: border-box;
+  padding: 5px;
+  border: 5px solid black;
+}

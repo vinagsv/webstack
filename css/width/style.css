@@ -1,0 +1,6 @@
+.para {
+  border: 2px solid;
+  padding: 2rem;
+  font-family: "Roboto";
+  background-image: linear-gradient(red, yellow);
+}
