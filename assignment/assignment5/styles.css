@@ -1,0 +1,33 @@
+/* Task 2: Class selectors */
+.highlight-row {
+  background-color: lightyellow;
+}
+
+.price-cell {
+  font-weight: bold;
+  color: green;
+}
+
+/* Task 3: ID selector */
+#productTable {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#productTable td,
+#productTable th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Task 4: Attribute selectors */
+th[scope="col"] {
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+tr[data-available="yes"] {
+  border-bottom: 2px dashed green;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS attributes</title>
+    <style>
+      /* ==================
+      attribute only
+      ================== */
+      /* img[title] {
+        border: 3px solid red;
+      }
+
+      input[type] {
+        border: 3px solid blue;
+      }
+
+      a[target] {
+        color: red;
+      } */
+
+      /* ======================
+      attribute with value
+      ====================== */
+      /* input[type="password"] {
+        border: 3px solid blue;
+      }
+
+      img[alt="Image of cat"] {
+        border: 3px solid rgb(255, 0, 191);
+      } */
+
+      /* ======================
+      attribute beigins with value
+      ====================== */
+      /* img[alt^="Image"] {
+        border: 3px solid rgb(255, 0, 191);
+      } */
+
+      a[href~="webstackacaddemy"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS attribute selector</h1>
+    <img src="./catimage.png" alt="Image of cat" width="200px" />
+    <p>
+      Lorem <a href="./catimage.png">ipsum dolor</a> sit amet consectetur
+      adipisicing elit. Modi sed iste, ducimus dolorem quaerat
+      <a href="https://www.webstackacademy.com" target="_blank">Lorem</a>Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore
+      deleniti, quis recusandae dolor quam ut obcaecati dignissimos in fugiat
+      quasi praesentium corrupti ipsa eius! Tempore libero provident inventore
+      velit?
+      <a href="">Link tag</a>
+    </p>
+    <img src="./flowerimage.png" title="flower" width="200px" />
+    <br />
+    <br />
+    Name:<input type="text" /> <br /><br />
+    Gender: <input type="text" />Male <input type="radio" /> Female <br /><br />
+    Address:<input type="text" /><br /><br />
+    Password:<input type="password" />
+  </body>
+</html>

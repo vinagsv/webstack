@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Form</title>
+    <style>
+      /* Styles */
+      body {
+        border: 5px solid black;
+        padding: 20px;
+        max-width: 200px;
+        margin: 50px auto;
+      }
+
+      .red-border {
+        border-color: red;
+      }
+
+      input[type="radio"] {
+        margin: 10px 0;
+      }
+
+      input[type="radio"]:checked {
+        outline: 3px solid orange;
+        padding: 2px;
+      }
+
+      input[type="checkbox"]:checked {
+        outline: 3px solid pink;
+        padding: 2px;
+      }
+
+      label {
+        margin-left: 5px;
+      }
+
+      select {
+        margin: 10px 0;
+        padding: 5px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="radio" id="yes" name="choice" value="yes" />
+      <label for="yes" class="label-yes">Yes</label>
+      <input type="radio" id="no" name="choice" value="no" />
+      <label for="no" class="label-no">No</label>
+      <br /><br />
+
+      <input type="checkbox" id="myCheckbox" />
+      <label for="myCheckbox" class="check-label">Check me!</label>
+      <br /><br />
+
+      <select>
+        <option>Apples</option>
+        <option>Oranges</option>
+        <option>Bananas</option>
+      </select>
+    </form>
+
+    <script>
+      const checkbox = document.getElementById("myCheckbox");
+      const body = document.body;
+
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          body.classList.add("red-border");
+        } else {
+          body.classList.remove("red-border");
+        }
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Form</title>
+    <style>
+      /* Styles */
+      body {
+        border: 5px solid black;
+        padding: 20px;
+        max-width: 200px;
+        margin: 50px auto;
+      }
+
+      .red-border {
+        border-color: red;
+      }
+
+      input[type="radio"]:checked + label {
+        margin: 10px 0;
+        color: red;
+      }
+
+      input[type="radio"]:checked {
+        outline: 3px solid orange;
+        padding: 2px;
+      }
+
+      input[type="checkbox"]:checked {
+        outline: 3px solid pink;
+        padding: 2px;
+      }
+
+      label {
+        margin-left: 5px;
+      }
+
+      select {
+        margin: 10px 0;
+        padding: 5px;
+        border: 2px solid black;
+      }
+
+      /* Add styles for selected label */
+      /* .red-text {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="radio" id="yes" name="choice" value="yes" />
+      <label for="yes" class="label-yes">Yes</label>
+      <input type="radio" id="no" name="choice" value="no" />
+      <label for="no" class="label-no">No</label>
+      <br /><br />
+
+      <input type="checkbox" id="myCheckbox" />
+      <label for="myCheckbox" class="check-label">Check me!</label>
+      <br /><br />
+
+      <select>
+        <option>Apples</option>
+        <option>Oranges</option>
+        <option>Bananas</option>
+      </select>
+    </form>
+
+    <!-- <script>
+      const checkbox = document.getElementById("myCheckbox");
+      const body = document.body;
+      const yesRadio = document.getElementById("yes");
+      const noRadio = document.getElementById("no");
+      const yesLabel = document.querySelector(".label-yes");
+      const noLabel = document.querySelector(".label-no");
+
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          body.classList.add("red-border");
+        } else {
+          body.classList.remove("red-border");
+        }
+      });
+
+      // Function to handle radio button color change
+      const handleRadioChange = () => {
+        if (yesRadio.checked) {
+          yesLabel.classList.add("red-text");
+          noLabel.classList.remove("red-text");
+        } else if (noRadio.checked) {
+          noLabel.classList.add("red-text");
+          yesLabel.classList.remove("red-text");
+        }
+      };
+
+      // Add event listeners to radio buttons
+      yesRadio.addEventListener("change", handleRadioChange);
+      noRadio.addEventListener("change", handleRadioChange);
+    </script> -->
+  </body>
+</html>
