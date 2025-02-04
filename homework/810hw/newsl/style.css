@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+.main-container {
+  width: 1600px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-weight: bolder;
+  color: #5e5d5d;
+}
+
+.reg-btn {
+  color: white;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: #e31b7b;
+  border: none;
+}
+
+.card {
+  display: flex;
+  margin-top: 20px;
+  background-color: #e3dddd;
+  justify-content: space-between;
+}
+
+.card > .main > p {
+  color: #8e8a8a;
+  font-size: larger;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.front-page > .main {
+  background-image: url("./NewsLetterTemplate-20241120/Archive/colorful-crystal-background-qndhplpj9aixnkey-qndhplpj9aixnkey.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  position: relative;
+}
+
+.front-page > .first > img {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 500px;
+}
+
+.front-page > .first > .right_sec {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.front-page > .first > .right_sec > .main-heading {
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: left;
+  background-color: #dfdfdf76;
+}
+
+.front-page > .first > .right_sec > .main-heading > h1 {
+  padding-left: 40%;
+  text-align: left;
+}
+
+.front-page > .first > .right_sec > div > button {
+  background: linear-gradient(to right, #29215d, #a20d96);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+
+.front-page > .first > .right_sec > .links {
+  padding: 20px;
+}
+
+.front-page > .first > .right_sec > .links > a {
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+.news > .card > .content {
+  padding: 20px;
+}
+
+.companies_visited > .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.companies_visited > .grid > img {
+  width: 300px;
+}
+
+.companies_visited > .students {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-color: darkblue;
+}
+
+.companies_visited > .students > img {
+  margin-left: 60px;
+  width: 300px;
+}
+
+footer > .register {
+  background-color: #ec0d78;
+  padding: 20px;
+}
+
+.register-btn {
+  margin-left: 30px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 50px;
+}
+
+footer > .copyright {
+  display: flex;
+  justify-content: space-between;
+}

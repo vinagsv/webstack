@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Sum of Mins</title>
+  </head>
+  <body>
+    <h2>Find Maximum Sum of Minimums</h2>
+    <label for="n">Enter a positive integer (n):</label>
+    <input type="number" id="n" min="1" required />
+    <br /><br />
+    <label for="array"
+      >Enter an array of 2n integers (separated by spaces):</label
+    >
+    <input type="text" id="array" required />
+    <br /><br />
+    <button onclick="calculateMaxSum()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+      function maxSumOfMins(n, arr) {
+        arr.sort((a, b) => a - b);
+        let sum = 0;
+        for (let i = 0; i < 2 * n; i += 2) {
+          sum += arr[i];
+        }
+        return sum;
+      }
+
+      function calculateMaxSum() {
+        const n = parseInt(document.getElementById("n").value, 10);
+        const arr = document
+          .getElementById("array")
+          .value.trim()
+          .split(" ")
+          .map(Number);
+
+        if (isNaN(n) || n <= 0) {
+          document.getElementById("result").textContent =
+            "Please enter a valid positive integer for n.";
+          return;
+        }
+
+        if (arr.length !== 2 * n || arr.some(isNaN)) {
+          document.getElementById("result").textContent =
+            "Please enter exactly 2n integers separated by spaces.";
+          return;
+        }
+
+        const result = maxSumOfMins(n, arr);
+        document.getElementById("result").textContent =
+          "Sum of min(ai, bi): " + result;
+      }
+    </script>
+  </body>
+</html>

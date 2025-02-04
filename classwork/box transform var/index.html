@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        --box-transform: translate(15px, 25px) rotate(30deg) scale(1.15);
+      }
+
+      body {
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: #520560;
+        text-align: center;
+        line-height: 150px;
+        margin-top: 10px;
+        color: white;
+      }
+
+      .box:hover {
+        --box-translate: translate(20px, 30px);
+        --box-rotate: rotate(45deg);
+        --box-scale: scale(1.2);
+        background-color: #056014;
+        transform: var(--box-translate) var(--box-rotate) var(--box-scale);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>

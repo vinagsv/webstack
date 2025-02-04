@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Pattern or parameters</title>
+  </head>
+  <body>
+    <h2>Learning rest Operator</h2>
+    <script>
+      //destructuring of array using rest
+      const colors = ["red", "green", "blue", "oragnge", "violet"];
+      const [pc1, pc2, pc3, ...otherColors] = colors;
+      console.log(pc1, pc2, pc3, otherColors);
+      console.log(colors);
+
+      //combining with regular function paramenter
+
+      function sum(...numbers) {
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+          sum = sum + numbers[1];
+          console.log(sum);
+        }
+      }
+      sum(2, 3);
+      sum(45, 56, 78, 96);
+      sum(25, 89, 45);
+      //combining with regular parameters
+      function greet(greeting) {
+        return `${greeting},${names.join(" and ")}!`;
+      }
+      greet("Hello", "Alice", "Bob", "charlie");
+      //   before equal to spread after equal to rest
+
+      //destructuring objects with rest parameters
+      //rest combining to arrays, while spread open into some
+    </script>
+  </body>
+</html>

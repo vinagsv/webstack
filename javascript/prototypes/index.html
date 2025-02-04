@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class</title>
+  </head>
+  <body>
+    <h2>Learning about ES^ classes</h2>
+
+    <script>
+      class PersonCl {
+        constructor(firstname, birthyear) {
+          this.firstname = firstname;
+          this.birthyear = birthyear;
+        }
+
+        //methods will added to the prototype property
+        calcAge() {
+          return console.log(2037 - this.birthyear);
+        }
+
+        greet() {
+          console.log("Hey there!😊");
+        }
+      }
+
+      //instances or object
+      const faizan = new PersonCl("Faizan", 2001);
+      console.log(faizan);
+    </script>
+  </body>
+</html>

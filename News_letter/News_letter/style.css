@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+.main-container {
+  width: 1600px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-weight: bolder;
+  color: #656161;
+}
+
+.pink-btn {
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color: #e91a7e;
+}
+
+.card {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.card > .content > p {
+  color: #8c8484;
+  font-size: larger;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.front-page > .content {
+  background-image: url("./NewsLetterTemplate-20241120/Archive/colorful-crystal-background-qndhplpj9aixnkey-qndhplpj9aixnkey.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  position: relative;
+}
+
+.front-page > .content > img {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 500px;
+}
+
+.front-page > .content > .right-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: end; */
+  /* padding-left: 20%; */
+  text-align: right;
+}
+
+.front-page > .content > .right-section > .main-heading {
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: left;
+  background-color: rgba(253, 253, 253, 0.461);
+}
+
+.front-page > .content > .right-section > .main-heading > h1 {
+  padding-left: 40%;
+  text-align: left;
+}
+
+.front-page > .content > .right-section > div > button {
+  background: linear-gradient(to right, #2d2561, #8f1385);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+
+.front-page > .content > .right-section > .links {
+  padding: 20px;
+}
+
+.front-page > .content > .right-section > .links > a {
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+/* -------------------- news ---------------- */
+
+.news > .card > .content {
+  padding: 20px;
+}
+
+/* ------------------  blog -------------- */
+
+/*---------------- companies visited -----------*/
+
+.comanies-visited > .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.comanies-visited > .grid > img {
+  width: 300px;
+}
+
+.comanies-visited > .students {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-color: darkblue;
+}
+
+.comanies-visited > .students > img {
+  margin-left: 60px;
+  width: 300px;
+}
+
+footer > .register {
+  background-color: #ec0d78;
+  padding: 20px;
+}
+
+.register-btn {
+  margin-left: 30px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 50px;
+}
+
+footer > .copyright {
+  display: flex;
+  justify-content: space-between;
+}
